@@ -6,4 +6,8 @@ import com.khye.foodmanager.model.Food;
 
 public interface FoodRepo extends JpaRepository<Food, Long> {
 
+	void deleteFoodById(Long id);
+
+	Food findFoodById(Long id);
+
 }
