@@ -34,7 +34,7 @@ public class FoodService {
 
 	public Food findFoodById(Long id) {
 		return foodRepo.findFoodById(id)
-				.orElseThrow(() -> new FoodNotFoundException("Food by id " + id + "was not found."));
+				.orElseThrow(() -> new FoodNotFoundException("Food by id [" + id + "] was not found."));
 
 	}
 

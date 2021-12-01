@@ -12,7 +12,7 @@ import javax.persistence.Id;
 @Entity
 public class Food implements Serializable {
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(nullable = false, updatable = false)
 	private Long id;
 	@Column(nullable = false, updatable = false)
