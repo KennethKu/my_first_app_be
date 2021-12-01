@@ -11,6 +11,10 @@ import javax.persistence.Id;
 //Serializable helps transform this java class to different type of string
 @Entity
 public class Food implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(nullable = false, updatable = false)
@@ -21,6 +25,7 @@ public class Food implements Serializable {
 	private String price;
 	private String quantity;
 	private String weight;
+	private String imageUrl;
 
 	public Food() {
 	}
@@ -79,6 +84,14 @@ public class Food implements Serializable {
 
 	public void setWeight(String weight) {
 		this.weight = weight;
+	}
+
+	public String getImageUrl() {
+		return imageUrl;
+	}
+
+	public void setImageUrl(String imageUrl) {
+		this.imageUrl = imageUrl;
 	}
 
 	@Override

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.khye.foodmanager.exception.FoodNotFoundException;
 import com.khye.foodmanager.model.Food;
-import com.khye.foodmanger.repository.FoodRepo;
+import com.khye.foodmanager.repository.FoodRepo;
 
 @Service
 public class FoodService {

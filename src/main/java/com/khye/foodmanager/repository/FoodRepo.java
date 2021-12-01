@@ -1,4 +1,4 @@
-package com.khye.foodmanger.repository;
+package com.khye.foodmanager.repository;
 
 import java.util.Optional;
 
